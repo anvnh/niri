@@ -6,7 +6,8 @@ binds {
         spawn-sh "kitty";
     }
     Alt+Space {
-        spawn "bash" "-lc" "qs -c ~/.config/quickshell ipc call launcher toggle";
+        // spawn "bash" "-lc" "qs -c ~/.config/quickshell ipc call launcher toggle";
+        spawn "bash" "-lc" "noctalia-shell ipc call launcher toggle";
     }
     Super+Shift+L {
         spawn "swaylock";
@@ -204,7 +205,8 @@ binds {
 
     Mod+C { center-column; }
 
-    Mod+V { spawn-sh "qs -c ~/.config/quickshell ipc call plugin:clipper toggle"; }
+    // Mod+V { spawn-sh "qs -c ~/.config/quickshell ipc call plugin:clipper toggle"; }
+    Mod+V { spawn-sh "noctalia-shell ipc call plugin:clipper toggle"; }
 
     // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }

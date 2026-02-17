@@ -4,7 +4,7 @@ include "conf.d/window-rules.kdl"
 include "conf.d/layout.kdl"
 include "conf.d/keymap.kdl"
 
-spawn-at-startup "qs"
+spawn-at-startup "noctalia-shell"
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 spawn-at-startup "wl-paste --watch cliphist store"
 
