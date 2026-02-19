@@ -13,7 +13,7 @@ binds {
         spawn "swaylock";
     }
     Mod+T {
-        spawn "brave";
+        spawn "vivaldi";
     }
     //}}}
 
