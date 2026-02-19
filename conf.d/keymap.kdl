@@ -15,6 +15,9 @@ binds {
     Mod+T {
         spawn "vivaldi";
     }
+    Mod+E {
+        spawn "dolphin";
+    }
     //}}}
 
     Super+Alt+S allow-when-locked=true { spawn-sh "pkill orca || exec orca"; }
@@ -102,8 +105,8 @@ binds {
     //{{{ Navigation between workspaces.
     Mod+Page_Down   { focus-workspace-down; }
     Mod+Page_Up     { focus-workspace-up; }
-    Mod+Ctrl+N     { focus-workspace-down; }
-    Mod+Ctrl+P     { focus-workspace-up; }
+    Ctrl+Alt+N     { focus-workspace-down; }
+    Ctrl+Alt+P     { focus-workspace-up; }
     //}}}
 
     //{{{ Moving columns (with all their windows) between workspaces.
