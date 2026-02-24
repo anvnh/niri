@@ -20,6 +20,7 @@ binds {
     }
     //}}}
 
+    //{{{ Multimedia keys
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
@@ -32,6 +33,7 @@ binds {
 
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    //}}}
 
     Mod+O repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
@@ -177,13 +179,16 @@ binds {
     Mod+Period { expel-window-from-column; }
     //}}}
 
+    //{{{Window width and height manipulation
+
     Mod+R { switch-preset-column-width; }
     // Mod+R { switch-preset-column-width-back; }
-
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Alt+Return { maximize-column; }
     Alt+Shift+Return { fullscreen-window; }
+
+    //}}}
 
     Mod+Ctrl+F { expand-column-to-available-width; }
 
@@ -193,21 +198,14 @@ binds {
 
     Mod+V { spawn-sh "noctalia-shell ipc call plugin:clipper toggle"; }
 
-    //{{{ Manipulating column widths and window heights.
-
-    // This command can also:
-    // * set width in pixels: "1000"
-    // * adjust width in pixels: "-5" or "+5"
-    // * set width as a percentage of screen width: "25%"
-    // * adjust width as a percentage of screen width: "-10%" or "+10%"
-    // set-column-width "100" will make the column occupy 200 physical screen pixels.
+    //{{{ Column width manipulation
     Mod+Minus { set-column-width "-5%"; }
     Mod+Equal { set-column-width "+5%"; }
+    //}}}
 
-    // Finer height adjustments when in column with other windows.
+    //{{{ Window height manipulation
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
-
     //}}}
 
     Mod+F       { toggle-window-floating; }
