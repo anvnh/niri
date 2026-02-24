@@ -1,3 +1,4 @@
+include "conf.d/debug.kdl"
 include "conf.d/input.kdl"
 include "conf.d/monitor.kdl"
 include "conf.d/window-rules.kdl"
