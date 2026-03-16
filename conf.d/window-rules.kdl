@@ -18,8 +18,8 @@ window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match title=r#"^(Picture in picture|Picture-in-Picture|PiP)$"#
 
-    match app-id="vivaldi-stable"
-    match title="^Bitwarden - Vivaldi$"
+    // match app-id="vivaldi-stable"
+    // match title="Bitwarden - Vivaldi"
 
     open-floating true
 }
