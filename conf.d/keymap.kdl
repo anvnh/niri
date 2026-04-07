@@ -9,6 +9,13 @@ binds {
         // spawn "bash" "-lc" "qs -c ~/.config/quickshell ipc call launcher toggle";
         spawn "bash" "-lc" "noctalia-shell ipc call launcher toggle";
     }
+
+    // Alt+Tab { focus-workspace-previous; }
+    // Alt+Tab { focus-workspace-down; }
+    // Alt+Shift+Tab { focus-workspace-up; }
+    Alt+Tab { focus-window-previous; }
+    // Alt+Shift+Tab { focus-column-left-or-last; }
+
     Super+Shift+L {
         spawn "swaylock";
     }
@@ -45,9 +52,13 @@ binds {
     Mod+Right { focus-column-right; }
 
     Mod+H     { focus-column-left; }
+    Mod+1     { focus-column-left; }
+
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
+
     Mod+L     { focus-column-right; }
+    Mod+2     { focus-column-right; }
     //}}}
 
     //{{{ Moving columns(contains 1 or more windows) horizontally in the same workspace and windows vertically within columns.
@@ -132,8 +143,8 @@ binds {
     // Mod+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     // Mod+Shift+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
 
-    // Mod+WheelScrollRight      { focus-column-right; }
-    // Mod+WheelScrollLeft       { focus-column-left; }
+    Mod+Shift+WheelScrollUp      { focus-column-left; }
+    Mod+Shift+WheelScrollDown       { focus-column-right; }
     // Mod+Ctrl+WheelScrollRight { move-column-right; }
     // Mod+Ctrl+WheelScrollLeft  { move-column-left; }
 
