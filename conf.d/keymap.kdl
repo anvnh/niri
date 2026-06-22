@@ -3,7 +3,7 @@ binds {
     // Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return {
         // spawn "kitty";
-        spawn-sh "kitty";
+        spawn "ghostty"
     }
     Alt+Space {
         // spawn "bash" "-lc" "qs -c ~/.config/quickshell ipc call launcher toggle";
@@ -13,7 +13,7 @@ binds {
     // Alt+Tab { focus-workspace-previous; }
     // Alt+Tab { focus-workspace-down; }
     // Alt+Shift+Tab { focus-workspace-up; }
-    Alt+Tab { focus-window-previous; }
+    // Alt+Tab { focus-window-previous; }
     // Alt+Shift+Tab { focus-column-left-or-last; }
 
     Super+Shift+L {
