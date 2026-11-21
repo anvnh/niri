@@ -20,7 +20,7 @@ binds {
         spawn "swaylock";
     }
     Mod+T {
-        spawn "vivaldi";
+        spawn "firefox";
     }
     Mod+E {
         spawn "thunar";
